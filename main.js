@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initFormValidation();
   initGalleryFilters();
   initProgressBars();
+  initPageHeroParticles();
 });
 
 function initNavbar() {
@@ -353,9 +354,9 @@ function initGalleryFilters() {
 // Progress Bar Animation
 function initProgressBars() {
   const progressBars = document.querySelectorAll('.progress-fill');
-  
+
   if (progressBars.length === 0) return;
-  
+
   const observerOptions = {
     threshold: 0.5
   };
@@ -372,5 +373,40 @@ function initProgressBars() {
 
   progressBars.forEach(bar => {
     observer.observe(bar);
+  });
+}
+
+// Page Hero Particles Animation
+function initPageHeroParticles() {
+  const particleContainers = document.querySelectorAll('.page-hero-particles');
+
+  const particles = [
+    { emoji: '⭐', class: 'particle-star' },
+    { emoji: '✓', class: 'particle-check' },
+    { emoji: '🍃', class: 'particle-leaf' }
+  ];
+
+  particleContainers.forEach(container => {
+    const particleCount = 12;
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      const randomParticle = particles[Math.floor(Math.random() * particles.length)];
+
+      particle.className = `particle ${randomParticle.class}`;
+      particle.textContent = randomParticle.emoji;
+
+      const randomDelay = Math.random() * 2;
+      const randomDuration = 4 + Math.random() * 3;
+      const randomLeft = Math.random() * 100;
+      const randomTop = 50 + Math.random() * 50;
+
+      particle.style.left = randomLeft + '%';
+      particle.style.top = randomTop + '%';
+      particle.style.animationDelay = randomDelay + 's';
+      particle.style.animationDuration = randomDuration + 's';
+
+      container.appendChild(particle);
+    }
   });
 }
