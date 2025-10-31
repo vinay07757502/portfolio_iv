@@ -27,8 +27,34 @@ function initNavbar() {
   });
 
   const navLinks = navMenu.querySelectorAll('.nav-link');
+  // Highlight current page link on load
+  const currentPath = window.location.pathname;
+  const currentPage = currentPath.split('/').pop() || 'index.html';
+
+  // Mark the body when on the home page so CSS can apply a transparent navbar
+  if (currentPage === 'index.html') {
+    document.body.classList.add('home-page');
+  }
+
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    // normalize link href to page name
+    try {
+      const linkPath = new URL(link.href).pathname;
+      const linkPage = linkPath.split('/').pop() || 'index.html';
+      if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+        link.classList.add('active');
+      }
+    } catch (e) {
+      // fallback: compare href strings
+      const href = link.getAttribute('href') || '';
+      const hrefPage = href.split('/').pop() || 'index.html';
+      if (hrefPage === currentPage) link.classList.add('active');
+    }
+
+    link.addEventListener('click', (ev) => {
+      // update active state when a nav link is clicked
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');
     });
