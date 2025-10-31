@@ -5,11 +5,12 @@
 }
 
 :root {
-  --primary-blue: #0056A6;
-  --accent-gold: #F4B400;
+  --primary-blue: #012169;
+  --accent-gold: #FFCD00;
+  --green-aussie: #00843D;
   --white: #FFFFFF;
-  --light-gray: #F7F9FC;
-  --dark-navy: #002B5C;
+  --light-gray: #F5F5F5;
+  --dark-navy: #00205B;
   --soft-black: #1E1E1E;
   --success: #28a745;
   --error: #dc3545;
@@ -229,7 +230,7 @@ nav.navbar.scrolled {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(1, 33, 105, 0.85), rgba(0, 132, 61, 0.75));
   z-index: 1;
 }
 
@@ -405,9 +406,17 @@ nav.navbar.scrolled {
 }
 
 .service-icon {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 25px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--green-aussie));
+  border-radius: 20px;
+  color: var(--white);
+  box-shadow: 0 5px 20px rgba(1, 33, 105, 0.2);
 }
 
 .service-card h3 {
@@ -485,18 +494,18 @@ nav.navbar.scrolled {
 }
 
 .agenda-number {
-  display: inline-block;
-  background-color: var(--primary-blue);
-  color: var(--white);
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
+  background: linear-gradient(135deg, var(--accent-gold), #FFE066);
+  color: var(--primary-blue);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 205, 0, 0.3);
 }
 
 .agenda-card h3 {
@@ -675,8 +684,17 @@ nav.navbar.scrolled {
 }
 
 .news-thumbnail {
-  font-size: 3rem;
+  font-size: 1.8rem;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--green-aussie));
+  border-radius: 12px;
+  color: var(--white);
+  box-shadow: 0 3px 12px rgba(1, 33, 105, 0.2);
 }
 
 .news-card h3 {
@@ -1083,11 +1101,12 @@ nav.navbar.scrolled {
 
 /* Gold Divider */
 .gold-divider {
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-gold), var(--primary-blue));
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--green-aussie), var(--primary-blue));
   margin: 0 auto 30px;
-  border-radius: 2px;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(255, 205, 0, 0.3);
 }
 
 /* Intro Section */
@@ -1112,7 +1131,7 @@ nav.navbar.scrolled {
 /* Stats Section */
 .stats-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--green-aussie) 50%, var(--dark-navy) 100%);
 }
 
 .stats-grid {
@@ -1139,9 +1158,18 @@ nav.navbar.scrolled {
 }
 
 .stat-icon {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 3px solid var(--accent-gold);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stat-number {
@@ -1209,11 +1237,19 @@ nav.navbar.scrolled {
 }
 
 .role-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--accent-gold), #FFE066);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 205, 0, 0.3);
   position: relative;
   z-index: 1;
+  color: var(--primary-blue);
 }
 
 .role-card h3 {
@@ -1234,7 +1270,7 @@ nav.navbar.scrolled {
 /* CTA Banner */
 .cta-banner {
   padding: 100px 0;
-  background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-blue) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--green-aussie) 50%, var(--dark-navy) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1324,7 +1360,7 @@ nav.navbar.scrolled {
 
 /* Page Hero */
 .page-hero {
-  background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-blue) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--green-aussie) 50%, var(--dark-navy) 100%);
   padding: 100px 0 80px;
   text-align: center;
 }
@@ -1433,8 +1469,17 @@ nav.navbar.scrolled {
 }
 
 .journey-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--green-aussie), #00A651);
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 132, 61, 0.3);
+  color: var(--white);
 }
 
 .journey-item h3 {
@@ -1548,7 +1593,7 @@ nav.navbar.scrolled {
 /* Quote Section */
 .quote-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--green-aussie) 50%, var(--dark-navy) 100%);
   text-align: center;
 }
 
@@ -1702,8 +1747,17 @@ nav.navbar.scrolled {
 }
 
 .vision-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+  border-radius: 18px;
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(1, 33, 105, 0.25);
 }
 
 .vision-item h3 {
@@ -1901,8 +1955,19 @@ nav.navbar.scrolled {
 }
 
 .contact-info-icon {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--green-aussie), #00A651);
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 15px rgba(0, 132, 61, 0.25);
+  color: var(--white);
 }
 
 .contact-info-card h3 {
@@ -2158,7 +2223,7 @@ nav.navbar.scrolled {
 }
 
 .cta-widget {
-  background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+  background: linear-gradient(135deg, var(--primary-blue), var(--green-aussie), var(--dark-navy));
   color: var(--white);
   text-align: center;
 }
