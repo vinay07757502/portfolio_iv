@@ -466,7 +466,8 @@ nav.navbar.scrolled {
 
 .agenda-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Force single-column layout so each agenda card sits on its own row */
+  grid-template-columns: 1fr;
   gap: 30px;
 }
 
@@ -1748,6 +1749,8 @@ nav.navbar.scrolled {
 
 .agenda-grid {
   display: grid;
+  /* Force single-column layout so agenda cards stack vertically */
+  grid-template-columns: 1fr;
   gap: 40px;
   margin-top: 50px;
 }
