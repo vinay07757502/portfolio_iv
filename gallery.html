@@ -26,28 +26,77 @@
         <li><a href="/agenda.html" class="nav-link">Agenda</a></li>
         <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
         <li><a href="/news.html" class="nav-link">News</a></li>
+        <li><a href="/blog.html" class="nav-link">Blog</a></li>
         <li><a href="/contact.html" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">Gallery</h1>
+      <p class="page-hero-subtitle">Moments from campaigns, community events, and leadership initiatives</p>
+    </div>
+  </section>
+
   <section class="gallery">
     <div class="container">
-      <h2 class="section-title">Gallery</h2>
-      <p class="section-subtitle">Campaign moments and community engagement</p>
+      <div class="gold-divider"></div>
+      
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="campaign">Campaign</button>
+        <button class="filter-btn" data-category="community">Community</button>
+        <button class="filter-btn" data-category="events">Events</button>
+      </div>
 
       <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item" onclick="openModal(this)">
-          <img src="/public/510692142_9932959933489684_9165617318576759166_n.jpg" alt="Profile">
+        <div class="gallery-item" data-category="campaign" onclick="openModal(this)">
+          <img src="/503188879_9909101702511295_1096167689969693381_n.jpg" alt="Liberal Party Campaign">
+          <div class="gallery-overlay">
+            <h4>Liberal Party Campaign</h4>
+            <p>Building community support</p>
+          </div>
         </div>
-        <div class="gallery-item" onclick="openModal(this)">
-          <img src="/public/36199783_10209695632026582_5263469884238462976_n.jpg" alt="Campaign">
+        
+        <div class="gallery-item" data-category="events" onclick="openModal(this)">
+          <img src="/510692142_9932959933489684_9165617318576759166_n.jpg" alt="Community Leadership">
+          <div class="gallery-overlay">
+            <h4>Community Leadership</h4>
+            <p>Engaging with residents</p>
+          </div>
         </div>
-        <div class="gallery-item" onclick="openModal(this)">
-          <img src="/public/503188879_9909101702511295_1096167689969693381_n.jpg" alt="Community Event">
+        
+        <div class="gallery-item" data-category="community" onclick="openModal(this)">
+          <img src="/36199783_10209695632026582_5263469884238462976_n.jpg" alt="Community Gathering">
+          <div class="gallery-overlay">
+            <h4>Community Gathering</h4>
+            <p>Celebrating diversity</p>
+          </div>
         </div>
-        <div class="gallery-item" onclick="openModal(this)">
-          <img src="/public/457148176_8106733386081478_8989033099643291565_n.jpg" alt="Leadership">
+        
+        <div class="gallery-item" data-category="campaign" onclick="openModal(this)">
+          <img src="/457148176_8106733386081478_8989033099643291565_n.jpg" alt="Political Rally">
+          <div class="gallery-overlay">
+            <h4>Political Rally</h4>
+            <p>Connecting with supporters</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events" onclick="openModal(this)">
+          <img src="/503188879_9909101702511295_1096167689969693381_n.jpg" alt="Public Speaking">
+          <div class="gallery-overlay">
+            <h4>Public Speaking</h4>
+            <p>Addressing community concerns</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="community" onclick="openModal(this)">
+          <img src="/510692142_9932959933489684_9165617318576759166_n.jpg" alt="Multicultural Event">
+          <div class="gallery-overlay">
+            <h4>Multicultural Event</h4>
+            <p>Celebrating our heritage</p>
+          </div>
         </div>
       </div>
     </div>

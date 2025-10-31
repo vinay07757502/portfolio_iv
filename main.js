@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initAnimatedCounters();
   initNewsFilters();
   initFormValidation();
+  initGalleryFilters();
+  initProgressBars();
 });
 
 function initNavbar() {
@@ -288,3 +290,61 @@ document.addEventListener('keydown', function(e) {
     closeNewsModal();
   }
 });
+
+// Gallery Filters
+function initGalleryFilters() {
+  const filterBtns = document.querySelectorAll('.gallery-filters .filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const category = btn.getAttribute('data-category');
+
+      galleryItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        
+        if (category === 'all' || itemCategory === category) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 10);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+}
+
+// Progress Bar Animation
+function initProgressBars() {
+  const progressBars = document.querySelectorAll('.progress-fill');
+  
+  if (progressBars.length === 0) return;
+  
+  const observerOptions = {
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+        entry.target.classList.add('animated');
+        const progress = entry.target.getAttribute('data-progress');
+        entry.target.style.width = progress + '%';
+      }
+    });
+  }, observerOptions);
+
+  progressBars.forEach(bar => {
+    observer.observe(bar);
+  });
+}

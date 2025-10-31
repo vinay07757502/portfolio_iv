@@ -26,51 +26,93 @@
         <li><a href="/agenda.html" class="nav-link">Agenda</a></li>
         <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
         <li><a href="/news.html" class="nav-link">News</a></li>
+        <li><a href="/blog.html" class="nav-link">Blog</a></li>
         <li><a href="/contact.html" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">News & Media</h1>
+      <p class="page-hero-subtitle">Latest updates, press releases, and community stories</p>
+    </div>
+  </section>
+
   <section class="news">
     <div class="container">
-      <h2 class="section-title">News & Media</h2>
-      <p class="section-subtitle">Latest updates and press releases</p>
+      <div class="gold-divider"></div>
 
       <div class="news-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="press">Press Release</button>
+        <button class="filter-btn active" data-filter="all">All News</button>
+        <button class="filter-btn" data-filter="press">Press Releases</button>
         <button class="filter-btn" data-filter="pardesh">Pardesh Express</button>
-        <button class="filter-btn" data-filter="council">Council Updates</button>
+        <button class="filter-btn" data-filter="council">Council News</button>
       </div>
 
       <div class="news-grid" id="newsGrid">
         <div class="news-card" data-category="press">
           <div class="news-thumbnail">📰</div>
           <h3>New Community Center Initiative Launched</h3>
-          <p class="news-date">October 2024</p>
-          <p>Announcing a groundbreaking initiative to establish community centers supporting youth education and cultural exchange.</p>
-          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+          <p class="news-date">October 28, 2024</p>
+          <p>Jugandeep Singh announces a groundbreaking $2 million initiative to establish three new community centers across Blacktown, supporting youth education, vocational training, and cultural exchange programs.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
         </div>
+
         <div class="news-card" data-category="pardesh">
           <div class="news-thumbnail">📝</div>
           <h3>Migration Reform: A Path Forward</h3>
-          <p class="news-date">September 2024</p>
-          <p>Exploring comprehensive migration reforms that balance security, integration, and opportunity for newcomers.</p>
-          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+          <p class="news-date">October 20, 2024</p>
+          <p>In a featured article in Pardesh Express, Jugandeep explores comprehensive migration reforms that balance security with integration, proposing faster visa processing and improved settlement services for new arrivals.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
         </div>
+
         <div class="news-card" data-category="council">
           <div class="news-thumbnail">🏛️</div>
-          <h3>Council Approves Infrastructure Development</h3>
-          <p class="news-date">August 2024</p>
-          <p>Local infrastructure project receives council approval, promising improved connectivity and economic growth.</p>
-          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+          <h3>Council Approves Major Infrastructure Development</h3>
+          <p class="news-date">October 15, 2024</p>
+          <p>Blacktown City Council unanimously approves a $15 million infrastructure project championed by Councillor Singh, promising improved roads, public transport connections, and new community facilities across the region.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
         </div>
+
         <div class="news-card" data-category="press">
           <div class="news-thumbnail">🎯</div>
-          <h3>Education Excellence Program Expanded</h3>
-          <p class="news-date">July 2024</p>
-          <p>Expanding educational support programs to reach 5,000 more students across the region.</p>
-          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+          <h3>Education Excellence Program Reaches 5,000 Students</h3>
+          <p class="news-date">October 10, 2024</p>
+          <p>Jugandeep Singh celebrates a major milestone as his vocational education programs reach 5,000 students, providing skills training, job placement assistance, and mentorship to young Australians from diverse backgrounds.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
+        </div>
+
+        <div class="news-card" data-category="pardesh">
+          <div class="news-thumbnail">🌏</div>
+          <h3>Multicultural Festival Draws Record Attendance</h3>
+          <p class="news-date">September 30, 2024</p>
+          <p>Over 10,000 people attend the annual Blacktown Multicultural Festival, organized with support from Jugandeep Singh, celebrating the rich cultural diversity of Western Sydney with food, music, and community performances.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
+        </div>
+
+        <div class="news-card" data-category="council">
+          <div class="news-thumbnail">💼</div>
+          <h3>Small Business Support Package Announced</h3>
+          <p class="news-date">September 22, 2024</p>
+          <p>Councillor Singh unveils a comprehensive support package for local small businesses, including reduced permit fees, mentorship programs, and access to microfinance options to help entrepreneurs thrive.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
+        </div>
+
+        <div class="news-card" data-category="press">
+          <div class="news-thumbnail">👥</div>
+          <h3>Youth Leadership Summit Empowers Next Generation</h3>
+          <p class="news-date">September 15, 2024</p>
+          <p>Jugandeep Singh hosts the inaugural Youth Leadership Summit, bringing together 200 young leaders for workshops on civic engagement, entrepreneurship, and community advocacy, inspiring the next generation of changemakers.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
+        </div>
+
+        <div class="news-card" data-category="pardesh">
+          <div class="news-thumbnail">📢</div>
+          <h3>Affordable Housing Initiative Gains Support</h3>
+          <p class="news-date">September 8, 2024</p>
+          <p>Pardesh Express reports on growing community support for Jugandeep Singh's affordable housing initiative, which aims to create 1,000 new affordable homes for working families and seniors across Blacktown over the next five years.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read Full Story</button>
         </div>
       </div>
     </div>

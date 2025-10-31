@@ -26,59 +26,108 @@
         <li><a href="/agenda.html" class="nav-link">Agenda</a></li>
         <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
         <li><a href="/news.html" class="nav-link">News</a></li>
+        <li><a href="/blog.html" class="nav-link">Blog</a></li>
         <li><a href="/contact.html" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">Connect with Jugandeep Singh</h1>
+      <p class="page-hero-subtitle">Your voice matters—reach out today</p>
+    </div>
+  </section>
+
   <section class="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Let's build a stronger community together</p>
+      <div class="gold-divider"></div>
+      
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📍</div>
+          <h3>Office Address</h3>
+          <p>Blacktown City Council<br>62 Flushcombe Road<br>Blacktown NSW 2148<br>Australia</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📞</div>
+          <h3>Hotline Number</h3>
+          <p><a href="tel:+61296215555">+61 2 9621 5555</a></p>
+          <p style="font-size: 0.9rem; margin-top: 10px;">Mobile: <a href="tel:+61412345678">+61 412 345 678</a></p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📧</div>
+          <h3>Email Address</h3>
+          <p><a href="mailto:jugandeep@council.nsw.gov.au">jugandeep@council.nsw.gov.au</a></p>
+          <p style="font-size: 0.9rem; margin-top: 10px;"><a href="mailto:info@jugandeepsingh.com">info@jugandeepsingh.com</a></p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">🕐</div>
+          <h3>Office Hours</h3>
+          <p>Monday - Friday<br>9:00 AM - 5:00 PM</p>
+          <p style="font-size: 0.9rem; margin-top: 5px;">Weekend appointments available by request</p>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 60px;">Send a Message</h2>
+      <p class="section-subtitle">I'm here to listen and help—get in touch</p>
 
       <div class="contact-grid">
         <div class="contact-form">
           <form id="contactForm" onsubmit="handleFormSubmit(event)">
             <div class="form-group">
-              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="text" id="name" placeholder="Your Full Name *" required>
               <span class="error-msg" id="nameError"></span>
             </div>
             <div class="form-group">
-              <input type="email" id="email" placeholder="Your Email" required>
+              <input type="email" id="email" placeholder="Your Email Address *" required>
               <span class="error-msg" id="emailError"></span>
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" placeholder="Phone Number" required>
+              <input type="tel" id="phone" placeholder="Phone Number *" required>
               <span class="error-msg" id="phoneError"></span>
             </div>
             <div class="form-group">
-              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+              <textarea id="message" placeholder="Your Message *" rows="6" required></textarea>
               <span class="error-msg" id="messageError"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <div class="success-msg" id="successMsg" style="display: none;">Thank you! Your message has been sent successfully.</div>
+            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            <div class="success-msg" id="successMsg" style="display: none;">
+              <strong>Thank you!</strong> Your message has been sent successfully. We'll get back to you soon.
+            </div>
           </form>
         </div>
         <div class="contact-info">
           <div class="info-item">
-            <h3>Office Address</h3>
-            <p>Community Leadership Center<br>City Centre, Australia</p>
+            <h3>Why Contact Me?</h3>
+            <p>Whether you have a question, need assistance, or want to get involved in community initiatives, I'm here to help. Your feedback and involvement are crucial to building a better future for everyone.</p>
           </div>
           <div class="info-item">
-            <h3>Contact Details</h3>
-            <p>Email: <a href="mailto:info@jugandeepsingh.com">info@jugandeepsingh.com</a><br>
-            Phone: <a href="tel:+61412345678">+61 412 345 678</a></p>
-          </div>
-          <div class="info-item">
-            <h3>Follow Us</h3>
+            <h3>Follow My Work</h3>
             <div class="social-links">
-              <a href="#" class="social-link">Facebook</a>
-              <a href="#" class="social-link">Twitter</a>
-              <a href="#" class="social-link">LinkedIn</a>
-              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">📘 Facebook</a>
+              <a href="#" class="social-link">🐦 Twitter</a>
+              <a href="#" class="social-link">💼 LinkedIn</a>
+              <a href="#" class="social-link">📸 Instagram</a>
             </div>
           </div>
+          <div class="info-item">
+            <h3>Connect via WhatsApp</h3>
+            <p>For quick inquiries, you can also reach me through WhatsApp using the floating button at the bottom right of this page.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.4771926203577!2d150.90616!3d-33.77194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sBlacktown%20City%20Council!5e0!3m2!1sen!2sau!4v1234567890" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   </section>

@@ -1,0 +1,195 @@
+Design and build a modern, responsive, and elegant political leadership website for Councillor Jugandeep Singh, a Liberal Party representative in Blacktown City Council, Sydney.
+
+The website should feel professional, inspirational, and community-driven — blending the essence of leadership, service, and progress. It must follow a clean UI, blue-gold color scheme, and smooth interactive effects using HTML, CSS, and JavaScript.
+
+🎨 Theme
+
+Style: Modern political + personal portfolio
+
+Color Palette:
+
+Primary Blue: #0056A6
+
+Dark Navy: #002B5C
+
+Accent Gold: #F4B400
+
+White: #FFFFFF
+
+Light Gray: #F7F9FC
+
+Fonts:
+
+Headings: Poppins (Bold)
+
+Paragraphs: Open Sans or Roboto
+
+Mood: Trustworthy, dynamic, multicultural, forward-thinking
+
+🏗 Structure
+
+Create the following main pages with modern sections, animations, and content:
+
+1. Home Page
+
+Hero section with title: “From Punjab to Parliament — The Journey of Jugandeep Singh”
+
+Background: Jugandeep’s portrait with blue gradient overlay
+
+Buttons: “Know My Work” and “Join the Vision”
+
+Short intro paragraph about Jugandeep’s leadership journey
+
+Quick stats (animated counters):
+
+15+ Years of Community Service
+
+5000+ Students Empowered
+
+1000+ Families Supported
+
+Section: “Key Roles” – cards for:
+
+Councillor, Blacktown City Council
+
+Founder, Vocational College
+
+Founder, Jawaharwala Education & Migration Services
+
+Editor-in-Chief, Pardesh Express
+
+Liberal Party Candidate
+
+CTA Banner: “Building a Stronger, Smarter, and More Compassionate Australia.”
+
+2. About Page
+
+Full bio section (with two-column layout: image + text)
+
+Headline: “Leadership Through Vision and Service”
+
+Sub-sections:
+
+Early Life & Migration Journey
+
+Political Involvement
+
+Community Advocacy
+
+Awards or Milestones Timeline
+
+Quote block:
+
+“Empowering communities, building opportunities, and celebrating diversity.”
+
+3. Services & Community Engagement
+
+Title: “Serving People, Empowering Communities”
+
+Grid with 5 cards (icons + text):
+
+Education Access & Reform
+
+Migration Support
+
+Local Infrastructure Development
+
+Youth Empowerment
+
+Cultural Inclusion
+
+Add a section for “Vision 2035” with progress bars or icons for:
+
+Smart Suburbs
+
+Affordable Housing
+
+Green Growth
+
+Community Health
+
+Transparent Governance
+
+4. Political Agendas
+
+Title: “Putting People First”
+
+Clean layout with 5 agenda blocks:
+
+Cost of Living Relief
+
+Education & Skills Development
+
+Migration Reform
+
+Local Business Support
+
+Youth & Women’s Representation
+
+5. Gallery (Dynamic Section)
+
+Masonry grid of event photos and videos
+
+Modal popup when clicking images
+
+Category filter (Campaign, Community, Events)
+
+6. News & Media (Dynamic Section)
+
+Dynamic news cards (image, title, snippet, read more)
+
+Filter tabs: Press Release, Pardesh Express, Council News
+
+7. Blog (Dynamic Section)
+
+Modern blog listing with featured image, title, and date
+
+Individual blog post page (hero banner + content + author bio)
+
+Sidebar with “Recent Posts” and “Categories”
+
+8. Contact Page
+
+Title: “Connect with Jugandeep Singh”
+
+Contact form (name, email, message)
+
+Office hours and address
+
+Hotline number
+
+Embedded Google Map
+
+Floating WhatsApp Help Button with smooth hover
+
+⚙️ Technical & Visual Details
+
+Fully responsive (desktop, tablet, mobile)
+
+Navbar: Transparent → solid on scroll
+
+Smooth scroll & fade-in animations (AOS.js or pure CSS transitions)
+
+Footer: Dark navy with social icons and quote:
+
+“Made with vision and service — © 2025 Jugandeep Singh”
+
+Interactive JS:
+
+Animated counters
+
+Filterable gallery
+
+Blog & news loading dynamically from a JSON array
+
+🧩 Extra Touches
+
+Subtle gold divider lines between sections
+
+Hover glow effects on buttons
+
+Political yet personal vibe — balance between professional leadership and community warmth
+
+Include liberal-style illustration or iconography where suitable
+
+The website should look unique, premium, and content-rich, reflecting hope, leadership, and progress.
