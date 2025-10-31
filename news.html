@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="News & Media - Jugandeep Singh" />
+  <title>News | Jugandeep Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <a href="/index.html" style="text-decoration: none; color: inherit;">Jugandeep Singh</a>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/services.html" class="nav-link">Services</a></li>
+        <li><a href="/agenda.html" class="nav-link">Agenda</a></li>
+        <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="/news.html" class="nav-link">News</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="news">
+    <div class="container">
+      <h2 class="section-title">News & Media</h2>
+      <p class="section-subtitle">Latest updates and press releases</p>
+
+      <div class="news-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="press">Press Release</button>
+        <button class="filter-btn" data-filter="pardesh">Pardesh Express</button>
+        <button class="filter-btn" data-filter="council">Council Updates</button>
+      </div>
+
+      <div class="news-grid" id="newsGrid">
+        <div class="news-card" data-category="press">
+          <div class="news-thumbnail">📰</div>
+          <h3>New Community Center Initiative Launched</h3>
+          <p class="news-date">October 2024</p>
+          <p>Announcing a groundbreaking initiative to establish community centers supporting youth education and cultural exchange.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+        </div>
+        <div class="news-card" data-category="pardesh">
+          <div class="news-thumbnail">📝</div>
+          <h3>Migration Reform: A Path Forward</h3>
+          <p class="news-date">September 2024</p>
+          <p>Exploring comprehensive migration reforms that balance security, integration, and opportunity for newcomers.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+        </div>
+        <div class="news-card" data-category="council">
+          <div class="news-thumbnail">🏛️</div>
+          <h3>Council Approves Infrastructure Development</h3>
+          <p class="news-date">August 2024</p>
+          <p>Local infrastructure project receives council approval, promising improved connectivity and economic growth.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+        </div>
+        <div class="news-card" data-category="press">
+          <div class="news-thumbnail">🎯</div>
+          <h3>Education Excellence Program Expanded</h3>
+          <p class="news-date">July 2024</p>
+          <p>Expanding educational support programs to reach 5,000 more students across the region.</p>
+          <button class="btn-link" onclick="openNewsModal(this)">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="newsModal" class="modal">
+      <div class="modal-content-box">
+        <span class="modal-close" onclick="closeNewsModal()">&times;</span>
+        <div id="newsModalContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Jugandeep Singh. Empowering communities, building opportunities, celebrating diversity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/61412345678" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

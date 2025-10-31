@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery - Jugandeep Singh" />
+  <title>Gallery | Jugandeep Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <a href="/index.html" style="text-decoration: none; color: inherit;">Jugandeep Singh</a>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="/about.html" class="nav-link">About</a></li>
+        <li><a href="/services.html" class="nav-link">Services</a></li>
+        <li><a href="/agenda.html" class="nav-link">Agenda</a></li>
+        <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="/news.html" class="nav-link">News</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">Campaign moments and community engagement</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="/public/510692142_9932959933489684_9165617318576759166_n.jpg" alt="Profile">
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="/public/36199783_10209695632026582_5263469884238462976_n.jpg" alt="Campaign">
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="/public/503188879_9909101702511295_1096167689969693381_n.jpg" alt="Community Event">
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+          <img src="/public/457148176_8106733386081478_8989033099643291565_n.jpg" alt="Leadership">
+        </div>
+      </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" src="" alt="">
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Jugandeep Singh. Empowering communities, building opportunities, celebrating diversity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/61412345678" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
